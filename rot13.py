@@ -1,3 +1,6 @@
+
+# a rot13 chiffre from ceasar for secret message 
+
 def rot13(text):
     result=""
     for char in text:
@@ -9,11 +12,12 @@ def rot13(text):
             result += char
     return result
 
-# decode with rot13 chiffre
-right_text = "Hallo"
-encrypt_text = rot13(right_text)
-print(encrypt_text)  # Hallo is "Uynno" 
+# chiffre text with rot13 
+plain_text = "Hallo"
+secret_text = rot13(plain_text)
+print(secret_text)  # "Hallo" is "Unyyb" with rot13
 
-# encode with rot13 chiffre
-decrypt_text = rot13(encrypt_text)
-print(decrypt_text)  #is "Hallo" 
+# dechiffre Text with rot13 
+plain_text = rot13(secret_text)
+print(plain_text)  # "Unyyb"  is "Hallo" with rot13
+
